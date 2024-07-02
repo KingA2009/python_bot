@@ -47,4 +47,4 @@ def chatgpt(message):
 
     response = requests.post(url, json=payload, headers=headers)
 
-    print(response.json())
+    return response.json()['result']
